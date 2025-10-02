@@ -1,8 +1,4 @@
 function! yaml_breadcrumb#get() abort
-  if &filetype !=# 'yaml'
-    return ''
-  endif
-
   let lnum = line('.')
   let path = []
   let curindent = indent(lnum)
